@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(timeout 8 npx ts-node --project tsconfig.json src/index.ts)",
+      "Bash(curl -s http://localhost:3000/nonexistent)",
+      "Bash(npx vite *)",
+      "Bash(echo \"Client PID: $!\")",
+      "Bash(sleep 6 && cat /tmp/client_test.log)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:5173/api/)"
+    ]
+  }
+}

@@ -1,4 +1,27 @@
-.env
-
+# Dependencies
 node_modules/
+**/node_modules/
 
+# Environment
+.env
+**/.env
+
+# Build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
