@@ -1,16 +1,19 @@
-# Dependencies
+# Dépendances
 node_modules/
 **/node_modules/
 
-# Environment
+# Variables d'environnement
 .env
 **/.env
+client/.env*
+!client/.env.example
 
-# Build output
-dist/
-build/
-**/dist/
-**/build/
+# Build client (servi par le serveur Express en prod)
+server/public/*
+!server/public/.gitkeep
+
+# Build serveur compilé
+server/dist/
 
 # Logs
 *.log
